@@ -98,21 +98,15 @@ const botMove = () => {
             }
         }
         if(unusedTiles.length > 0) {
-            const randomIndex = Math.floor(Math.random() * unusedTiles.length);
-            const tileId = unusedTiles[randomIndex];
-
-            // Get the actual tile element
-            const randomTile = tiles[tileId];
-
-            // Make the move
-            randomTile.textContent = "O";
-            turn += 1;
+            const randomIndex = Math.floor(Math.random() * unusedTiles.length)
+            const tileId = unusedTiles[randomIndex]
+            const randomTile = tiles[tileId]
+            randomTile.textContent = "O"
+            turn += 1
             oArray.push(tileId);
-            usedTiles.push(tileId);
-            msg.textContent = "Player 1 turn";
-
-            // Check for win condition after bot move
-            winCheck();
+            usedTiles.push(tileId)
+            msg.textContent = "Player 1 turn"
+            winCheck()
         }
     }
 }
