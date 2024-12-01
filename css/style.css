@@ -1,0 +1,98 @@
+body {
+  background-color: #f0f2f5;
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #34495e;
+}
+
+h4 {
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 325px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.14);
+  justify-content: center;
+  gap: 5px;
+}
+
+.sqr {
+  width: 30%;
+  aspect-ratio: 1/1;
+  border: 3px solid #3498db;
+  font-size: 64px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin: 1px;
+}
+
+.sqr:hover {
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+.sqr:has(text="X") {
+  color: #e74c3c;
+}
+
+.sqr:has(text="O") {
+  color: #2ecc71;
+}
+
+.gamemodeButton {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.gamemodeButton:hover {
+  background-color: #2980b9;
+}
+
+.restartButton {
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e74c3c;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.restartButton:hover {
+  background-color: #c0392b;
+}
